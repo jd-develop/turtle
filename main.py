@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # coding:utf-8
 import turtle
+from random import choice
+
+colors = ["red", "orange", "yellow", "green", "blue", "indigo", "purple"]
 
 turtle1 = turtle.Turtle()
 turtle2 = turtle.Turtle()
@@ -10,9 +13,9 @@ turtle1.width(5)
 turtle2.width(5)
 turtle3.width(5)
 
-turtle1.color('red')
-turtle2.color('green')
-turtle3.color('blue')
+turtle1.color(choice(colors))
+turtle2.color(choice(colors))
+turtle3.color(choice(colors))
 
 turtle1.up()
 turtle2.up()
@@ -33,6 +36,9 @@ for loop in range(2):
         turtle2.left(120)
         turtle3.forward(a)
         turtle3.left(120)
+        turtle1.color(choice(colors))
+        turtle2.color(choice(colors))
+        turtle3.color(choice(colors))
     a = 50
 
 turtle1.forward(50)
@@ -46,6 +52,9 @@ for loop in range(5):
     turtle2.left(120)
     turtle3.forward(a)
     turtle3.left(120)
+    turtle1.color(choice(colors))
+    turtle2.color(choice(colors))
+    turtle3.color(choice(colors))
 
 turtle1.right(60)
 turtle2.right(60)
